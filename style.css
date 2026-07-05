@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100dvh;
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculate-part {
+  min-height: 350px;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  border-radius: 20px;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+
+  label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  input {
+    height: 30px;
+    width: 50%;
+    padding: 10px;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(59, 161, 165);
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: rgb(31, 99, 101);
+  }
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 300px) {
+  .container {
+    padding: 20px;
+  }
+
+  .calculate-part {
+    padding: 10px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    button {
+      width: 60%;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .container {
+    padding: 20px;
+  }
+
+  .calculate-part {
+    padding: 10px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    button {
+      width: 60%;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .calculate-part {
+    width: 500px;
+    padding: 10px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      width: 50%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 20px;
+  }
+
+  .calculate-part {
+    width: 600px;
+    padding: 10px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      width: 50%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
